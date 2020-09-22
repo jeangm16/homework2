@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <title>Jean's Bio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono:wght@100&display=swap"
+    rel="stylesheet" />
+
+  <!-- We link our html to the Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Container Div -->
+  <!--<div class="container">-->
+
+  <!-- Section 1: Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Our brand / logo -->
+    <a class="navbar-brand" href="#">The Coding Boot Camp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible button -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <!-- The links of our navbar -->
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.awge.com/" target="_blank">Features</a>
+
+        </li>
+
+        <!-- a Dropdown menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+        <!--links to diffrent pages-->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="https://github.com/jeangm16" target="_blank">My Github</a>
+            <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+            <a class="dropdown-item" href="contactme.html">Contact Me</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Site Header -->
+  <header>
+    <!-- h1: The most important headline -->
+    <h1>Student Bio</h1>
+  </header>
+
+  <!-- Jumbotron element -->
+  <div class="jumbotron">
+    <!-- centered text -->
+    <h1 class="text-center"><strong>Welcome to My Page</strong></h1>
+    <h2 class="text-center">Hi!</h2>
+    <h3 class="text-center">Click This or Dont Lol</h3>
+
+    <!-- button with predefined style rules -->
+    <p class="text-center">
+      <a class="btn btn-primary btn-lg" href="contactme.html" role="button">
+        <span class="fa fa-envelope"></span> Learn more</a>
+    </p>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="highlight">Jean Gabriel Melendez</h2>
+          </div>
+          <img id="car" class="card-img-top img-fluid" src="car.jpeg" alt="Picture of car"  />
+        </div>
+
+        <!-- Section 1: name and image   -->
+        <section class="name-image">
+          <!-- < h2: Tier-2 Headline (Not as important as the h1 header, but more than one allowed). 
+
+          Image with link  -->
+        </section>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <section class="bio">
+          <!-- Paragraph with embedded link -->
+          <p id="first-paragraph">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Adipiscing bibendum est ultricies integer quis auctor
+            elit sed vulputate. Egestas maecenas pharetra convallis posuere
+            morbi. Eleifend mi in nulla posuere sollicitudin aliquam ultrices.
+            Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc.
+            Nisl nunc mi ipsum faucibus vitae. Praesent semper feugiat nibh
+            sed pulvinar proin gravida hendrerit lectus. Vivamus arcu felis
+            bibendum ut tristique et egestas quis.
+          </p>
+        </section>
+      </div>
+
+      <!-- Section 2: Contact Info -->
+      <div class="col-12 col-md-4">
+        <section class="contact">
+          <!--added col-->
+          <!-- h2: Tier-2 Headline -->
+          <h2><strong>Contact Info</strong></h2>
+          <!-- Unordered list -->
+          <ul>
+            <li>
+              <!--Email link-->
+              <strong>My Email:</strong> <a href="#">Jeangm16@hotmail.com</a>
+            </li>
+            <li>
+              <strong>My Github:</strong>
+              <a href="https://github.com/jeangm16" target="_blank">Press Me</a>
+            </li>
+            <li>
+              <strong>Portfolio:</strong>
+              <a href="https://www.awge.com/" target="_blank">Click Me</a>
+            </li>
+            <li>
+              <strong>Contact Now:</strong> <a href="contactme.html">Press Me</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>Made with ❤️️ by Jean.G.M</h2>
+      <p>
+         &copy; 2020 JEAN Solution Services, Inc.
+      </p>
+  </div>
+
+
+
+  <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
