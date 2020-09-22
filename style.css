@@ -12,18 +12,6 @@ header {
   margin: 0 auto;
 }
 
-section {
-  float: left;
-}
-
-section.name-image,
-section.contact {
-  width: 300px;
-}
-
-section.bio {
-  width: 400px;
-}
 
 body {
   padding: 0;
