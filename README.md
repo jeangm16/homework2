@@ -1,4 +1,4 @@
-# Homework-2
+# myWebpage
 this is my homework number 2 
 i made a webpage that contains my bio 
 a website i designed 
