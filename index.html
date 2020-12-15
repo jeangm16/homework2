@@ -1,161 +1,198 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Jean's Bio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono:wght@100&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="UTF-8" />
-  <title>Jean's Bio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono:wght@100&display=swap"
-    rel="stylesheet" />
+    <!-- We link our html to the Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <!-- We link our html to the Bootstrap CDN -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
 
-  <link href="style.css" rel="stylesheet" />
-</head>
+  <body>
+    <!-- Container Div -->
+    <!--<div class="container">-->
 
-<body>
-  <!-- Container Div -->
-  <!--<div class="container">-->
+    <!-- Section 1: Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Our brand / logo -->
+      <a class="navbar-brand" href="index.html">The Coding Boot Camp</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <!-- Section 1: Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- Our brand / logo -->
-    <a class="navbar-brand" href="index.html">The Coding Boot Camp</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Collapsible button -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <!-- The links of our navbar -->
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
 
-    <!-- Collapsible button -->
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto">
-        <!-- The links of our navbar -->
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.awge.com/" target="_blank"
+              >Features</a
+            >
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.awge.com/" target="_blank">Features</a>
+          <!-- a Dropdown menu -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
 
-        </li>
+            <!--links to diffrent pages-->
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a
+                class="dropdown-item"
+                href="https://github.com/jeangm16"
+                target="_blank"
+                >My Github</a
+              >
+              <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+              <a class="dropdown-item" href="contactme.html">Contact Me</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-        <!-- a Dropdown menu -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
+    <!-- Site Header -->
+    <header>
+      <!-- h1: The most important headline -->
+      <h1>Student Bio</h1>
+    </header>
 
-        <!--links to diffrent pages-->
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="https://github.com/jeangm16" target="_blank">My Github</a>
-            <a class="dropdown-item" href="portfolio.html">Portfolio</a>
-            <a class="dropdown-item" href="contactme.html">Contact Me</a>
-          </div>
-        </li>
-      </ul>
+    <!-- Jumbotron element -->
+    <div class="jumbotron">
+      <!-- centered text -->
+      <h1 class="text-center"><strong>Welcome to My Page</strong></h1>
+      <h2 class="text-center">Hi!</h2>
+      <h3 class="text-center">Click This or Dont Lol</h3>
+
+      <!-- button with predefined style rules -->
+      <p class="text-center">
+        <a class="btn btn-primary btn-lg" href="contactme.html" role="button">
+          <span class="fa fa-envelope"></span> Learn more</a
+        >
+      </p>
     </div>
-  </nav>
-
-  <!-- Site Header -->
-  <header>
-    <!-- h1: The most important headline -->
-    <h1>Student Bio</h1>
-  </header>
-
-  <!-- Jumbotron element -->
-  <div class="jumbotron">
-    <!-- centered text -->
-    <h1 class="text-center"><strong>Welcome to My Page</strong></h1>
-    <h2 class="text-center">Hi!</h2>
-    <h3 class="text-center">Click This or Dont Lol</h3>
-
-    <!-- button with predefined style rules -->
-    <p class="text-center">
-      <a class="btn btn-primary btn-lg" href="contactme.html" role="button">
-        <span class="fa fa-envelope"></span> Learn more</a>
-    </p>
-  </div>
 
     <!--my name with img of a car and first col-->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 col-md-5">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="highlight">Jean Gabriel Melendez</h2>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="highlight">Jean Gabriel Melendez</h2>
+            </div>
+            <img
+              id="car"
+              class="card-img-top img-fluid"
+              src="car.jpeg"
+              alt="Picture of car"
+            />
           </div>
-          <img id="car" class="card-img-top img-fluid" src="car.jpeg" alt="Picture of car"  />
+
+          <!-- Section 1: name and image   -->
+          <section class="name-image"></section>
         </div>
 
-        <!-- Section 1: name and image   -->
-        <section class="name-image">
-        </section>
-      </div>
+        <!--sec col and bio par-->
+        <div class="col-12 col-md-4">
+          <section class="bio">
+            <!-- bio Paragraph -->
+            <p id="first-paragraph">
+              I Started Coding when I was 9 with my first webpage being as ugly
+              and basic as you could imagine, coding was varied hard at first
+              because I have dyslexia and ADHD so it was hard to focus and the
+              number of typos would make you scream lol. slowly I got better and
+              better even getting paid to make webpages with one of my best
+              webpages being link in Portfolio. I just lost interest in coding
+              websites and wanted to do something different which I did. I
+              started to make music and produce witch let me meet amazing and
+              talented people. One of those people even asked me to make them a
+              website.
+            </p>
+          </section>
+        </div>
 
-      <!--sec col and bio par-->
-      <div class="col-12 col-md-4">
-        <section class="bio">
-          <!-- bio Paragraph -->
-          <p id="first-paragraph">
-            I Started Coding when I was 9 with my first webpage being as ugly and basic as you could imagine,
-             coding was varied hard at first because I have dyslexia and ADHD so it was hard to focus and the number
-              of typos would make you scream lol.
-            slowly I got better and better even getting paid to make webpages with one of my best webpages being link in Portfolio.
-            I just lost interest in coding websites and wanted to do something different which I did.
-             I started to make music and produce witch let me meet amazing and talented people.
-              One of those people even asked me to make them a website.  
-          </p>
-        </section>
-      </div>
-
-      <!--Contact Info and col 3   -->
-      <div class="col-12 col-md-3">
-        <section class="contact">
-          <!--added col-->
-          <!-- Headline -->
-          <h2><strong>Contact Info</strong></h2>
-          <!-- Unordered list -->
-          <ul>
-            <li>
-              <!--Email link-->
-              <strong>My Email:</strong> <a href="mailto:Jeangm16@hotmail.com">Jeangm16@hotmail.com</a>
-            </li>
-            <li>
-              <!--My Github should send user to git hub-->
-              <strong>My Github:</strong>
-              <a href="https://github.com/jeangm16" target="_blank">Press Me</a>
-            </li>
-            <li>
-              <!--Portfolio link should send user to website i built   -->
-              <strong>Portfolio:</strong>
-              <a href="portfolio.html" target="_blank">Click Me</a>
-            </li>
-            <li>
-              <!--Should send user to contactme.html -->
-              <strong>Contact Now:</strong> <a href="contactme.html">Press Me</a>
-            </li>
-          </ul>
-        </section>
+        <!--Contact Info and col 3   -->
+        <div class="col-12 col-md-3">
+          <section class="contact">
+            <!--added col-->
+            <!-- Headline -->
+            <h2><strong>Contact Info</strong></h2>
+            <!-- Unordered list -->
+            <ul>
+              <li>
+                <!--Email link-->
+                <strong>My Email:</strong>
+                <a href="mailto:Jeangm16@hotmail.com">Jeangm16@hotmail.com</a>
+              </li>
+              <li>
+                <!--My Github should send user to git hub-->
+                <strong>My Github:</strong>
+                <a href="https://github.com/jeangm16" target="_blank"
+                  >Press Me</a
+                >
+              </li>
+              <li>
+                <!--Portfolio link should send user to website i built   -->
+                <strong>Portfolio:</strong>
+                <a href="portfolio.html" target="_blank">Click Me</a>
+              </li>
+              <li>
+                <!--Should send user to contactme.html -->
+                <strong>Contact Now:</strong>
+                <a href="contactme.html">Press Me</a>
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!--my beautiful footer-->
-  <div class="footer">
-    <h2>Made with ❤️️ by Jean.G.M</h2>
-      <p>
-         &copy; 2020 JEAN Solution Services, Inc.
-      </p>
-  </div>
+    <!--my beautiful footer-->
+    <div class="footer">
+      <h2>Made with ❤️️ by Jean.G.M</h2>
+      <p>&copy; 2020 JEAN Solution Services, Inc.</p>
+    </div>
 
-  <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</body>
-
+    <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
 </html>
